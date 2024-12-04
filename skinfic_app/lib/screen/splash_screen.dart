@@ -19,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
       const Duration(seconds: 3),
       () {
         if (mounted) {
-          Navigator.pushNamed(context, PageRouter.registerPage);
+          Navigator.pushReplacementNamed(context, PageRouter.registerPage);
         }
       },
     );
