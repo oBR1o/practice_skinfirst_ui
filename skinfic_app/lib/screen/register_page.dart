@@ -56,7 +56,7 @@ class RegisterPage extends StatelessWidget {
             ),
             child: GestureDetector(
               onTap: () {
-                Navigator.pushReplacementNamed(context, PageRouter.logInPage);
+                Navigator.pushNamed(context, PageRouter.logInPage);
               },
               child: Container(
                 width: 207.w,
@@ -85,7 +85,7 @@ class RegisterPage extends StatelessWidget {
             ),
             child: GestureDetector(
               onTap:() {
-                Navigator.pushReplacementNamed(context, PageRouter.signUpPage);
+                Navigator.pushNamed(context, PageRouter.signUpPage);
               },
               child: Container(
                 width: 207.w,
