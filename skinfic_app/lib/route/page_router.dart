@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:skinfic_app/screen/home_page.dart';
 import 'package:skinfic_app/screen/log_in_page.dart';
 import 'package:skinfic_app/screen/register_page.dart';
 import 'package:skinfic_app/screen/sign_up_page.dart';
@@ -14,6 +15,7 @@ class PageRouter {
 
   static final Map<String, WidgetBuilder> routes = {
     splashScreen: (context) => const SplashScreen(),
+    homePage: (context) => const HomePage(),
     registerPage: (context) => const RegisterPage(),
     logInPage: (context) => const LogInPage(),
     signUpPage: (context) => const SignUpPage(),
