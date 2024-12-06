@@ -181,20 +181,25 @@ class _LogInPageState extends State<LogInPage> {
               child: Center(
                 child: Column(
                   children: [
-                    Container(
-                      width: 207.r,
-                      height: 45.r,
-                      decoration: BoxDecoration(
-                        color: const Color.fromARGB(255, 34, 96, 255),
-                        borderRadius: BorderRadius.circular(30.r),
-                      ),
-                      child: Center(
-                        child: Text(
-                          'Log In',
-                          style: GoogleFonts.leagueSpartan(
-                              fontSize: 24.r,
-                              fontWeight: FontWeight.w500,
-                              color: Colors.white),
+                    GestureDetector(
+                      onTap:(){
+                        Navigator.pushReplacementNamed(context, PageRouter.homePage);
+                      },
+                      child: Container(
+                        width: 207.r,
+                        height: 45.r,
+                        decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 34, 96, 255),
+                          borderRadius: BorderRadius.circular(30.r),
+                        ),
+                        child: Center(
+                          child: Text(
+                            'Log In',
+                            style: GoogleFonts.leagueSpartan(
+                                fontSize: 24.r,
+                                fontWeight: FontWeight.w500,
+                                color: Colors.white),
+                          ),
                         ),
                       ),
                     ),
